@@ -1,5 +1,25 @@
 # Abgabe Moderne-SE-Architekturen
-# MotoMate
+
+## Inhaltsverzeichnis
+1. [Definition der Fallstudie](#Definition-der-Fallstudie)
+	- [MotoMate](#MotoMate)
+	- [Hauptfunktionen](#Hauptfunktionen)
+2. [Personas](#Personas)
+	- [Bernd Brummer](#Bernd-Brummer)
+	- [Leon Ludwig](#Leon-Ludwig)
+	- [Maike Müller](#Maike-Müller)
+	- [Armin Angebot](#Armin-Angebot)
+	- [Petra Byte](#Petra-Byte)
+	- [Frank Fröhlich](#Frank-Fröhlich)
+3. [User Stories](#User-Stories)
+	- [Kunden](#Kunden)
+	- [Motorradhändler](#Motorradhändler)
+	- [Kundensupport](#Kundensupport)
+	- [Administrator](#Administrator)
+4. [Nichtfunktionale Anforderungen](#Nichtfunktionale-Anforderungen)
+
+# Definition der Fallstudie
+## MotoMate
 > Shift into gear, MotoMate is here ~
 
 MotoMate ist eine Anwendung, die es Benutzern ermöglicht, Motorradtouren zu buchen und sich ein passendes Fahrzeug für das Erlebnis auszuwählen. Für Motorradhändler bietet die Plattform eine einfache Möglichkeit, ihre Produkte an den Mann zu bringen.
@@ -23,7 +43,7 @@ MotoMate ist eine Anwendung, die es Benutzern ermöglicht, Motorradtouren zu buc
     - *Buchungsbestätigung*
     - *Zahlungsbestätigung*
 
-## Personas
+# Personas
 
 ### Bernd Brummer
 
@@ -83,7 +103,7 @@ Rolle: Kundensupport
 
 > Er bringt mehrere Jahre Erfahrung im Kundendienst mit, die er bei einem großen E-Commerce-Unternehmen gesammelt hat. Frank zeichnet sich durch seine Fähigkeit aus, schnell auf Kundenbedürfnisse zu reagieren und Lösungen auf empathische Weise zu vermitteln. Er ist technisch versiert und kann sich schnell in neue Software einarbeiten. Seine Stärken liegen in der Kommunikation und im Konfliktmanagement, was es ihm ermöglicht, auch in stressigen Situationen einen kühlen Kopf zu bewahren. Julia ist besonders motiviert, wenn sie ihren Kunden helfen kann, eine positive Erfahrung zu machen, und ist ständig auf der Suche nach Wegen, den Kundenservice zu verbessern.
 
-## User Stories
+# User Stories
 
 ### Kunden
 
@@ -121,7 +141,7 @@ Rolle: Kundensupport
 
 3. Als **Administrator** möchte ich **Werbeaktionen und Rabatte** einrichten können, um die **Nutzerbindung** zu erhöhen und **neue Kunden** anzuziehen.
 
-## Nichtfunktionale Anforderungen
+# Nichtfunktionale Anforderungen
 
 ### 1. Skalierbarkeit
 Skalierbarkeit ist entscheidend, um auf Änderungen in der Nachfrage flexibel reagieren zu können. Für MotoMate bedeutet dies, dass die Plattform so gestaltet sein muss, dass sie eine wachsende Anzahl von Nutzern und Buchungen ohne Beeinträchtigung der Leistung handhaben kann. Wenn also immer mehr Motorradfahrer und Fahrgäste in verschiedenen Städten MotoMate nutzen, kann die Plattform diese steigende Nachfrage bewältigen, indem sie beispielsweise mehr Serverressourcen bereitstellt oder die Software so optimiert, dass sie effizienter läuft.
@@ -131,7 +151,7 @@ Mögliche technische Strategien:
 - *Mehr Server oder Cloud-basierte Dienste nutzen*, die automatisch mehr Ressourcen bereitstellen, wenn die Nachfrage steigt. Auch in Spitzenzeiten, wie während der Urlaubszeit oder großen Events in Städten, werden Nutzer eine reibungslose und schnelle Erfahrung haben.
 
 ### 2. Globale Nutzung durch Datenbank Replikation
-Um MotoMate auch international nutzbar zu machen, ist es sinnvoll, Kopien der Datenbank in verschiedenen Ländern zu speichern. Diese Datenbank-Replikation sorgt dafür, dass Nutzer schnellen Zugriff auf notwendige Daten wie Fahrerverfügbarkeiten oder Buchungsinformationen haben, unabhängig davon, wo sie sich befinden. 
+Um MotoMate auch international nutzbar zu machen, ist es sinnvoll, Kopien der Datenbank in verschiedenen Ländern zu speichern. Diese Datenbank-Replikation sorgt dafür, dass Nutzer schnellen Zugriff auf notwendige Daten wie Fahrerverfügbarkeiten oder Buchungsinformationen haben, unabhängig davon, wo sie sich befinden.
 
 Mögliche technische Strategie:
 - *Replikation* bedeutet, dass Kopien der Hauptdatenbank an verschiedenen Orten gespeichert werden, um sicherzustellen, dass Daten schnell geladen und Transaktionen zeitnah durchgeführt werden können. Das nicht nur verbessert die Nutzererfahrung durch schnelleren Zugriff und höhere Geschwindigkeit der App, sondern erhöht auch die Ausfallsicherheit: Sollte eine Datenbank ausfallen, können Anfragen automatisch an eine andere, funktionierende Kopie umgeleitet werden.
@@ -144,4 +164,3 @@ Mögliche Technische Strategien:
 - *Load Balancing*: Verteilung des Datenverkehrs auf mehrere Server, um Überlastung zu vermeiden und die Antwortzeiten zu verkürzen.
 - *Regelmäßige Wartung und Updates*: Durch das regelmäßige Aktualisieren der Software und Hardware sowie durch vorbeugende Wartung können viele Probleme vermieden werden, bevor sie die Verfügbarkeit beeinträchtigen.
 - *Monitoring und Alerting*: Echtzeitüberwachung der Systeme kann ungewöhnliche Aktivitäten erkennen und automatisch Alarme auslösen.
-
