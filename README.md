@@ -171,7 +171,7 @@ Mögliche Technische Strategien:
 - *Monitoring und Alerting*: Echtzeitüberwachung der Systeme kann ungewöhnliche Aktivitäten erkennen und automatisch Alarme auslösen.
 
 # Architectural Decision Records
-- <a href="./ard-001.md" target="_blank">ADR-001: Skalierbarkeit für MotoMate</a>
+- <a href="./adr-001.md" target="_blank">ADR-001: Skalierbarkeit für MotoMate</a>
 
 # Mircoservice Architektur
 
