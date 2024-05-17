@@ -17,6 +17,11 @@
 	- [Kundensupport](#Kundensupport)
 	- [Administrator](#Administrator)
 4. [Nichtfunktionale Anforderungen](#Nichtfunktionale-Anforderungen)
+	- [Skalierbarkeit](#1-Skalierbarkeit)
+	- [Globale Nutzung durch Datenbank Replikation](#2-Globale-Nutzung-durch-Datenbank-Replikation)
+	- [Verfügbarkeit](#3-Verfügbarkeit)
+5. [Architectual Decision Records](#ADR-Architectual-Decision-Records)
+6. [Microservice Architektur](#Microservice-Architektur)
 
 # Definition der Fallstudie
 ## MotoMate
@@ -97,7 +102,7 @@ Alter: 36 Jahre | Nutzergruppe: Mitarbeiter | Rolle: Administratorin
 
 ### Frank Fröhlich
 
-<img src="./assets/persona-7.jpg" alt="Frank Fröhlich" height="200">
+<img src="./assets/persona-8.jpg" alt="Frank Fröhlich" height="200">
 
 Alter: 26 Jahre | Nutzergruppe: Mitarbeiter | Rolle: Kundensupport
 
@@ -164,3 +169,10 @@ Mögliche Technische Strategien:
 - *Load Balancing*: Verteilung des Datenverkehrs auf mehrere Server, um Überlastung zu vermeiden und die Antwortzeiten zu verkürzen.
 - *Regelmäßige Wartung und Updates*: Durch das regelmäßige Aktualisieren der Software und Hardware sowie durch vorbeugende Wartung können viele Probleme vermieden werden, bevor sie die Verfügbarkeit beeinträchtigen.
 - *Monitoring und Alerting*: Echtzeitüberwachung der Systeme kann ungewöhnliche Aktivitäten erkennen und automatisch Alarme auslösen.
+
+# Architectural Decision Records
+- <a href="./ard-001.md" target="_blank">ADR-001: Skalierbarkeit für MotoMate</a>
+
+# Mircoservice Architektur
+
+tbd.
