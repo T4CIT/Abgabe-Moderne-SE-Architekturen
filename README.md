@@ -22,6 +22,11 @@
 	- [Verfügbarkeit](#3-Verfügbarkeit)
 5. [Architectual Decision Records](#ADR-Architectual-Decision-Records)
 6. [Microservice Architektur](#Microservice-Architektur)
+7. [Google Cloud Platform Products](#Google-Cloud-Platform-Products)
+    - [Datenbanken](#Datenbanken)
+    - [GKE Cluster](#GKE-Cluster)
+    - [Weitere Produkte](#Weitere-Produkte)
+    - [Kosten](#Kosten)
 
 # Definition der Fallstudie
 ## MotoMate
@@ -176,3 +181,47 @@ Mögliche Technische Strategien:
 # Mircoservice Architektur
 
 tbd.
+
+# Google Cloud Platform Products
+
+## Datenbanken
+Aufgrund der verschiedenen Anforderungen an die Funktionalität der diversen MotoMate-Datenbanken haben wir uns für eine Kombination aus verschiedenen Produkten entschieden:
+
+1. **Cloud SQL**
+- Datenbanken: User DB, Bike DB, Locations DB, Discount DB, Billing DB
+- Begründung:
+    - Managed Service: Google übernimmt die Aufgabe von bspw. Backups und Updates, was die administrativen Aufgaben des MotoMate Teams reduziert
+    - Flexibilität: Wir sind flexibel in der Auswahl zwischen MySQL und PostgreSQL
+    - Skalierbarkeit: Cloud SQL ist sowohl vertikal als auch horizontal skalierbar
+2. **Cloud Firestore**
+- Datenbank: Ticket DB
+- Begründung:
+    - Bezahlung per Read and Write counts: Tickets werden i.d.R. nur wenige Male bearbeitet und schnell geschlossen
+    - Wir rechnen mit wenig bis medium vielen Ticketeinträgen in der Datenbank
+    - JSON-Format: JSON erleichtert die Aufbereitsweise eine Ticket-Modells
+3. **Cloud Redis**
+- Datenbank: Chatbot Knowledge DB
+- Begründung:
+    - Funktionalität des Chatbots erfordert schnelle Reads
+
+## GKE Cluster
+- Annahmen:
+    - Als globale Platform rechnen wir mit ca. 5 Mio. Request pro Tag, daraus ergeben sich 58 Req./Sek.
+    - Hierbei handelt es sich um eine Überschlagsrechnung, die 3 ausgewählten Use Cases decken einen großteil der Microservices ab
+    - Rechnung:
+        - Buchung: 58 Req./Sek. * 8 Microservices
+        - Bike Management: 58 Req./Sek. * 3 Microservices
+        - Kundensupport-Chat: 5 Req./Sek. * 12 Microservices 
+            - Anmerkung: Requestanzahl wurde reduziert, weil nicht jeder User ein Support-Anliegen hat. Microservice Request/Response Zahl wurde erhöht, weil mehrere Nachrichten ausgetauscht werden
+        - Ergebnis: 648 Req./Sek.
+        - 1 Instanz kann 50 Req./Sek. verarbeitet -> 13 Instanzen
+        - 1 Instanz = 13 CPUs & 16 GB -> **4 Nodes mit jeweils 4 CPUs und 13 GB** (Teilweise aufgerundet, weil beim Konfigurator bei manchen Kriterien nur 2er-Schritte eingestellt werden konnten)
+
+## Weitere Produkte
+- BigQuery: Wir möchten das Nutzerverhalten auswerten und Datenanlyse bei den Kombinationen aus Tour-, Mottorad-, und Zeitraumbuchung betreiben.
+- PubSub: Der Messaging Dienst von Google wird für den Kundensupport-Chat und dem Benachrichtigungsdienst eingesetzt.
+- Load Balancer: In Peak-Zeiten möchten wir genügend Instanzen des Buchungssystems anbieten können, um mit der erhöhten Anzahl an Anfragen umgehen zu können.
+
+## Kosten
+- Die Kosten der oben genannten Produkte belaufen sich auf Kosten in Höhe von **2.751,32 EUR** pro Monat
+- Unter Berücksichtigung der Nichtfunktionalen Anforderung *Datenbank Replikation* bei insgesamt 5 gespiegelten Standorten sind die tatsächlichen Gesamtkosten **7.993,16 EUR** pro Monat
