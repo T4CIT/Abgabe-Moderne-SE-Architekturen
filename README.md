@@ -224,4 +224,6 @@ Aufgrund der verschiedenen Anforderungen an die Funktionalität der diversen Mot
 
 ## Kosten
 - Die Kosten der oben genannten Produkte belaufen sich auf Kosten in Höhe von **2.751,32 EUR** pro Monat
+    - <a href="https://cloud.google.com/products/calculator/estimate-preview/7ab2c737-58fd-46b4-a073-b3a524b5a38a" target="_blank">Web-Link</a>
+    - <a href="./google-cost-estimate.csv" target="_blank">CSV</a>
 - Unter Berücksichtigung der Nichtfunktionalen Anforderung *Datenbank Replikation* bei insgesamt 5 gespiegelten Standorten sind die tatsächlichen Gesamtkosten **7.993,16 EUR** pro Monat
