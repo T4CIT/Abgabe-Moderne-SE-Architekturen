@@ -182,17 +182,11 @@ Mögliche Technische Strategien:
 
 Die Microservice Architektur lässt sich am einfachsten nachvollziehen, indem man die Microservices zum Verständnis in vier Teilbereiche unterteilt:
 
-    1. MotoMate-Hauptfunktionen Microservices
-    2. User Microservices
-    3. Kundensupport Microservices
-    4. Händler Microservices
-
 <img src="./assets/microservices-uebersicht.png" alt="Microservices Übersicht" height="500">
-
 
 - Schema ohne Admin: <a href="./microservices.png" target="_blank">Link</a>
 - Schema nur Admin: <a href="./microservices-admin.png" target="_blank">Link</a>
-- Schema Vollständig: <a href="./mricoservices-all.png" target="_blank">Link</a>
+- Schema Vollständig: <a href="./microservices-all.png" target="_blank">Link</a>
 
 # Google Cloud Platform Products
 
