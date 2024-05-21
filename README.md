@@ -180,7 +180,19 @@ Mögliche Technische Strategien:
 
 # Mircoservice Architektur
 
-tbd.
+Die Microservice Architektur lässt sich am einfachsten nachvollziehen, indem man die Microservices zum Verständnis in vier Teilbereiche unterteilt:
+
+    1. MotoMate-Hauptfunktionen Microservices
+    2. User Microservices
+    3. Kundensupport Microservices
+    4. Händler Microservices
+
+<img src="./assets/microservices-uebersicht.png" alt="Microservices Übersicht" height="500">
+
+
+- Schema ohne Admin: <a href="./micro-services.png" target="_blank">Link</a>
+- Schema nur Admin: <a href="./micro-services-admin.png" target="_blank">Link</a>
+- Schema Vollständig: <a href="./mrico-services-all.png" target="_blank">Link</a>
 
 # Google Cloud Platform Products
 
@@ -218,9 +230,9 @@ Aufgrund der verschiedenen Anforderungen an die Funktionalität der diversen Mot
         - 1 Instanz = 13 CPUs & 16 GB -> **4 Nodes mit jeweils 4 CPUs und 13 GB** (Teilweise aufgerundet, weil beim Konfigurator bei manchen Kriterien nur 2er-Schritte eingestellt werden konnten)
 
 ## Weitere Produkte
-- BigQuery: Wir möchten das Nutzerverhalten auswerten und Datenanlyse bei den Kombinationen aus Tour-, Mottorad-, und Zeitraumbuchung betreiben.
-- PubSub: Der Messaging Dienst von Google wird für den Kundensupport-Chat und dem Benachrichtigungsdienst eingesetzt.
-- Load Balancer: In Peak-Zeiten möchten wir genügend Instanzen des Buchungssystems anbieten können, um mit der erhöhten Anzahl an Anfragen umgehen zu können.
+- **BigQuery**: Wir möchten das Nutzerverhalten auswerten und Datenanlyse bei den Kombinationen aus Tour-, Mottorad-, und Zeitraumbuchung betreiben.
+- **PubSub**: Der Messaging Dienst von Google wird für den Kundensupport-Chat und dem Benachrichtigungsdienst eingesetzt.
+- **Load Balancer**: In Peak-Zeiten möchten wir genügend Instanzen des Buchungssystems anbieten können, um mit der erhöhten Anzahl an Anfragen umgehen zu können.
 
 ## Kosten
 - Die Kosten der oben genannten Produkte belaufen sich auf Kosten in Höhe von **2.751,32 EUR** pro Monat
