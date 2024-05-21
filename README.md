@@ -190,9 +190,9 @@ Die Microservice Architektur lässt sich am einfachsten nachvollziehen, indem ma
 <img src="./assets/microservices-uebersicht.png" alt="Microservices Übersicht" height="500">
 
 
-- Schema ohne Admin: <a href="./micro-services.png" target="_blank">Link</a>
-- Schema nur Admin: <a href="./micro-services-admin.png" target="_blank">Link</a>
-- Schema Vollständig: <a href="./mrico-services-all.png" target="_blank">Link</a>
+- Schema ohne Admin: <a href="./microservices.png" target="_blank">Link</a>
+- Schema nur Admin: <a href="./microservices-admin.png" target="_blank">Link</a>
+- Schema Vollständig: <a href="./mricoservices-all.png" target="_blank">Link</a>
 
 # Google Cloud Platform Products
 
