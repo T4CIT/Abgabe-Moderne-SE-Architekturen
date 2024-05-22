@@ -229,7 +229,7 @@ Aufgrund der verschiedenen Anforderungen an die Funktionalität der diversen Mot
 - **Load Balancer**: In Peak-Zeiten möchten wir genügend Instanzen des Buchungssystems anbieten können, um mit der erhöhten Anzahl an Anfragen umgehen zu können.
 
 ## Kosten
-- Die Kosten der oben genannten Produkte belaufen sich auf Kosten in Höhe von **2.751,32 EUR** pro Monat
-    - <a href="https://cloud.google.com/products/calculator/estimate-preview/7ab2c737-58fd-46b4-a073-b3a524b5a38a" target="_blank">Web-Link</a>
+- Die Kosten der oben genannten Produkte belaufen sich auf Kosten in Höhe von **4.008,25 EUR** pro Monat
+    - <a href="https://cloud.google.com/products/calculator/estimate-preview/4f26d948-c99d-43ca-9a8d-30f54a508305" target="_blank">Web-Link</a>
     - <a href="./google-cost-estimate.csv" target="_blank">CSV</a>
-- Unter Berücksichtigung der Nichtfunktionalen Anforderung *Datenbank Replikation* bei insgesamt 5 gespiegelten Standorten sind die tatsächlichen Gesamtkosten **7.993,16 EUR** pro Monat
+- Unter Berücksichtigung der Nichtfunktionalen Anforderung *Datenbank Replikation* wurden Datenbanken in Deutschland, USA, Australien und Hong Kong gebucht.
