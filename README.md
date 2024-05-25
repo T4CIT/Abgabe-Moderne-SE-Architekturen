@@ -111,7 +111,7 @@ Alter: 36 Jahre | Nutzergruppe: Mitarbeiter | Rolle: Administratorin
 
 Alter: 26 Jahre | Nutzergruppe: Mitarbeiter | Rolle: Kundensupport
 
-> Er bringt mehrere Jahre Erfahrung im Kundendienst mit, die er bei einem großen E-Commerce-Unternehmen gesammelt hat. Frank zeichnet sich durch seine Fähigkeit aus, schnell auf Kundenbedürfnisse zu reagieren und Lösungen auf empathische Weise zu vermitteln. Er ist technisch versiert und kann sich schnell in neue Software einarbeiten. Seine Stärken liegen in der Kommunikation und im Konfliktmanagement, was es ihm ermöglicht, auch in stressigen Situationen einen kühlen Kopf zu bewahren. Julia ist besonders motiviert, wenn sie ihren Kunden helfen kann, eine positive Erfahrung zu machen, und ist ständig auf der Suche nach Wegen, den Kundenservice zu verbessern.
+> Er bringt mehrere Jahre Erfahrung im Kundendienst mit, die er bei einem großen E-Commerce-Unternehmen gesammelt hat. Frank zeichnet sich durch seine Fähigkeit aus, schnell auf Kundenbedürfnisse zu reagieren und Lösungen auf empathische Weise zu vermitteln. Er ist technisch versiert und kann sich schnell in neue Software einarbeiten. Seine Stärken liegen in der Kommunikation und im Konfliktmanagement, was es ihm ermöglicht, auch in stressigen Situationen einen kühlen Kopf zu bewahren. Frank ist besonders motiviert, wenn sie ihren Kunden helfen kann, eine positive Erfahrung zu machen, und ist ständig auf der Suche nach Wegen, den Kundenservice zu verbessern.
 
 # User Stories
 
