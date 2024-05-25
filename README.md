@@ -200,7 +200,7 @@ Aufgrund der verschiedenen Anforderungen an die Funktionalität der diversen Mot
     - Flexibilität: Wir sind flexibel in der Auswahl zwischen MySQL und PostgreSQL
     - Skalierbarkeit: Cloud SQL ist sowohl vertikal als auch horizontal skalierbar
 2. **Cloud Firestore**
-- Datenbank: Ticket DB
+- Datenbank: Ticket DB, Message Buffer
 - Begründung:
     - Bezahlung per Read and Write counts: Tickets werden i.d.R. nur wenige Male bearbeitet und schnell geschlossen
     - Wir rechnen mit wenig bis medium vielen Ticketeinträgen in der Datenbank
